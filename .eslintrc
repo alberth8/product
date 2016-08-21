@@ -38,7 +38,7 @@
     "one-var": [1, { "uninitialized": "always", "initialized": "never" }],
     /* Commas */
     "comma-style": [2, "last"],
-    "comma-dangle": [2, "always"],
+    "comma-dangle": [2, "always-multiline"],
     /* Quotes */
     "quotes": [2, "single"],
     /* Output */
