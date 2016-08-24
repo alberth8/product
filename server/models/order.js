@@ -1,5 +1,9 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
+const connection = require('./config/connect.js');
+const autoIncrement = require('mongoose-auto-increment');
+
+autoIncrement.initialize(connection);
 
 const orderSchema = new Schema({
   createdAt: {
@@ -38,6 +42,10 @@ const orderSchema = new Schema({
   stripeChargeId: String,
 });
 
+orderSchema.plugin(autoIncrement.plugin, {
+  model: 'Order', 
+  field: 'orderId',
+});
 const Order = mongoose.model('Order', orderSchema);
 
 module.exports = Order;

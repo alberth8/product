@@ -49,6 +49,9 @@ const userSchema = new Schema({
   },
 });
 
+// userSchema.plugin(autoInc)
 const User = mongoose.model('User', userSchema);
+
+// TODO:create a stripe customer when the user is created
 
 module.exports = User; 

@@ -10,7 +10,7 @@ const productSchema = new Schema({
     type: Date,
     default: Date.now,
   },
-  styleNumber: {
+  styleId: {
     type: String,
     required: true,
     unique: true,
