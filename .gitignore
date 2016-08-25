@@ -38,3 +38,5 @@ jspm_packages
 
 # Misc
 tasks.md
+dev.env
+*dev.env

@@ -20,6 +20,7 @@
     "curly": 2,
     "eqeqeq": [2, "smart"],
     "func-style": [2, "expression"],
+    "no-unused-vars": 1,
     /* Semicolons */
     "semi": 2,
     "no-extra-semi": 2,
